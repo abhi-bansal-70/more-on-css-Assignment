@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semi-transparent Card with Image</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .card {
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        background-color: rgba(255, 255, 255, 1); /* Fully opaque white */
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 2; /* Semi-transparent image */
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover img {
+        opacity: 0.7; /* Fully opaque image on hover */
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://pwskills.com/_next/image/?url=https%3A%2F%2Fcdn.pwskills.com%2Fassets%2Fuploads%2Fthumbnails%2F6568179250c244fbec73aaf4.png&w=640&q=75"
+        alt="PW Skills Full stack web development" />
+        <p><b>Course Name:</b>PW SKills full stack web development</p>
+</div>
+
+</body>
+</html>

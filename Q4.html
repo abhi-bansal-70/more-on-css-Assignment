@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage with Circular Image</title>
+    <style>
+        /* Resetting default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the container div */
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Making the image circular */
+.container img {
+    border-radius: 50%; /* Make it circular */
+    width: 200px; /* Set width as per your preference */
+    height: 200px; /* Set height as per your preference */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn72RneMXj5jIjkOA7e9_LPISq_wiyELovLQ&s" alt="Example Image">
+    </div>
+</body>
+</html>
